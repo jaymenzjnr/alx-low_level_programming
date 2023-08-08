@@ -112,9 +112,12 @@ void print_data(unsigned char *e_ident)
 }
 
 /**
- *  * print_version - Prints the version of an ELF header.
- *   * @e_ident: A pointer to an array containing the ELF version.
- *    */
+ *  print_version - Prints the version of an ELF header.
+ *  @e_ident: A pointer to an array containing the ELF version.
+ *   
+ *
+ *   
+ */
 void print_version(unsigned char *e_ident)
 {
 	 printf(" Version: %d",
@@ -221,7 +224,7 @@ void print_type(unsigned int e_type, unsigned char *e_ident)
 }
 
 /**
- * print_entry - Prints the entry point of an ELF header.
+ * prints_entry - Prints the entry point of an ELF header.
  * @e_entry: The address of the ELF entry point.
  * @e_ident: A pointer to an array containing the ELF class.
  */
